@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 import { llamaNodesRpcs } from "../constants/llamaNodesRpcs";
-import { arrayMove } from "../utils";
+import { arrayMove } from "../utils/fetch";
 
 export const useLlamaNodesRpcData = (chainId, data) => {
   const [rpcData, hasLlamaNodesRpc] = useMemo(() => {

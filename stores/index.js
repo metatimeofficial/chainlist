@@ -9,8 +9,3 @@ export const useRpcStore = create((set) => ({
   rpcs: [],
   addRpc: (value) => set((state) => ({ rpcs: [...state.rpcs, value] })),
 }));
-
-export const useAccount = create((set) => ({
-  account: null,
-  setAccount: (account) => set(() => ({ account })),
-}));

@@ -1,4 +1,3 @@
-import { getAddress } from "ethers/lib/utils.js";
 import { useQuery } from "@tanstack/react-query";
 
 async function getAccount() {
@@ -10,7 +9,7 @@ async function getAccount() {
 
       return {
         chainId: window.networkVersion ? Number(window.networkVersion) : null,
-        address: accounts && accounts.length > 0 ? getAddress(accounts[0]) : null,
+        address: accounts && accounts.length > 0 ? (accounts[0]) : null,
         isConnected: window.ethereum.connected ? true : false,
       };
     } else {

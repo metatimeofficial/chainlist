@@ -5,13 +5,22 @@
     "join-our-discord": "加入 社群",
     "currency": "代币",
     "search-networks": "查找网络",
-    "description": "Chainlist 是 EVM 网络的列表。 用户可以使用这些信息将他们的钱包和 Web3 中间件提供商连接到适当的Chain ID 和网络 ID，以连接到正确的链。",
+    "description": "ChainList 是 EVM 网络的列表。 用户可以使用这些信息将他们的钱包和 Web3 中间件提供商连接到适当的Chain ID 和网络 ID，以连接到正确的链。",
     "help-info": "帮助用户连接到 EVM 驱动的网络",
     "add-your-network": "添加你的网络",
     "add-your-rpc": "添加你的RPC",
     "language": "English",
     "add-to-metamask": "添加到Metamask",
     "add-to-imToken": "添加到imToken",
-    "add-to-wallet": "添加到Wallet"
+    "add-to-wallet": "添加到Wallet",
+    "add-to-xdefi": "添加到XDEFI",
+    "toggle-theme": "切换主题",
+    "add-to-brave": "添加到Brave",
+    "add-to-coinbase": "添加到Coinbase Wallet",
+    "add-to-taho": "添加到Taho",
+    "add-to-trust": "添加到Trust Wallet",
+    "contact-us": "联系我们",
+    "no-privacy-info": "没有隐私信息",
+    "your-ad-here": "您的广告在这里"
   }
 }

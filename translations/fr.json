@@ -5,7 +5,7 @@
     "join-our-discord": "Rejoindre le Discord",
     "currency": "Monnaie",
     "search-networks": "Rechercher les réseaux",
-    "description": "Chainlist est une liste de réseaux EVM. Les utilisateurs peuvent utiliser les informations pour connecter leurs portefeuilles et leurs fournisseurs Web3 de middleware à l'ID de chaîne et l'ID de réseau appropriés pour se connecter à la bonne chaîne.",
+    "description": "ChainList est une liste de réseaux EVM. Les utilisateurs peuvent utiliser les informations pour connecter leurs portefeuilles et leurs fournisseurs Web3 de middleware à l'ID de chaîne et l'ID de réseau appropriés pour se connecter à la bonne chaîne.",
     "help-info": "Aider les utilisateurs à se connecter aux réseaux alimentés par EVM",
     "add-your-network": "Ajouter votre réseau",
     "add-your-rpc": "Ajouter votre RPC",
@@ -16,6 +16,11 @@
     "add-to-brave": "Ajouter à Brave",
     "add-to-coinbase": "Ajouter à Coinbase Wallet",
     "add-to-trust": "Ajouter à Trust Wallet",
-    "no-privacy-info": "Aucune information de confidentialité"
+    "add-to-xdefi": "Ajouter à XDEFI",
+    "no-privacy-info": "Aucune information de confidentialité",
+    "add-to-taho": "Ajouter à Taho",
+    "contact-us": "Contactez-nous",
+    "toggle-theme": "Changer le thème",
+    "your-ad-here": "Votre publicité ici"
   }
 }

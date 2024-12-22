@@ -2,6 +2,7 @@ import * as Fathom from "fathom-client";
 import { useMutation, QueryClient } from "@tanstack/react-query";
 import { FATHOM_EVENTS_ID, FATHOM_DROPDOWN_EVENTS_ID, FATHOM_NO_EVENTS_ID, CHAINS_MONITOR } from "./useAnalytics";
 import { connectWallet } from "./useConnect";
+import { llamaNodesRpcByUrl } from "../constants/llamaNodesRpcs";
 
 const toHex = (num) => {
   return "0x" + num.toString(16);
@@ -14,16 +15,17 @@ export async function addToNetwork({ address, chain, rpc }) {
         await connectWallet();
       }
 
+      const rpcUrls = rpc ? [rpc] : chain.rpc.map((r) => r?.url ?? r)
 
       const params = {
         chainId: toHex(chain.chainId), // A 0x-prefixed hexadecimal string
-        chainName: chain.name,
+        chainName: llamaNodesRpcByUrl[rpcUrls[0]]?.name || chain.name,
         nativeCurrency: {
           name: chain.nativeCurrency.name,
           symbol: chain.nativeCurrency.symbol, // 2-6 characters long
           decimals: chain.nativeCurrency.decimals,
         },
-        rpcUrls: rpc ? [rpc] : chain.rpc.map((r) => r?.url ?? r),
+        rpcUrls,
         blockExplorerUrls: [
           chain.explorers && chain.explorers.length > 0 && chain.explorers[0].url
             ? chain.explorers[0].url

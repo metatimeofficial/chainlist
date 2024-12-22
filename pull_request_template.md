@@ -8,4 +8,4 @@ If you are adding a new RPC, please answer the following questions.
 
 #### If the RPC has none of the above and you still think it should be added, please explain why:
 
-
+Your RPC should always be added at the end of the array.

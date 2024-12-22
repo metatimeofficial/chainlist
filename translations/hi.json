@@ -1,0 +1,26 @@
+{
+    "Common": {
+      "connect-wallet": "वॉलेट कनेक्ट करें",
+      "view-source-code": "स्रोत कोड देखें",
+      "join-our-discord": "हमारे Discord समूह में शामिल हों",
+      "currency": "मुद्रा",
+      "search-networks": "नेटवर्क खोजें",
+      "description": "चेनलिस्ट एक EVM नेटवर्कों की सूची है। उपयोगकर्ता इस जानकारी का उपयोग अपनी वॉलेट और वेब3 मिडलवेयर प्रदाताओं को विशेष चैन ID और नेटवर्क ID से जोड़ने के लिए कर सकते हैं ताकि सही चेन से कनेक्ट हो सकें।",
+      "help-info": "उपयोगकर्ताओं को EVM पावर्ड नेटवर्कों से जोड़ने में मदद करना",
+      "add-your-network": "अपना नेटवर्क जोड़ें",
+      "add-your-rpc": "अपना RPC जोड़ें",
+      "language": "हिन्दी",
+      "add-to-metamask": "Metamask में जोड़ें",
+      "add-to-imToken": "imToken में जोड़ें",
+      "add-to-wallet": "वॉलेट में जोड़ें",
+      "add-to-brave": "Brave में जोड़ें",
+      "add-to-coinbase": "Coinbase वॉलेट में जोड़ें",
+      "add-to-trust": "Trust वॉलेट में जोड़ें",
+      "add-to-taho": "Taho में जोड़ें",
+      "add-to-xdefi": "XDEFI में जोड़ें",
+      "no-privacy-info": "कोई गोपनीयता जानकारी नहीं",
+      "toggle-theme": "थीम टॉगल करें",
+      "your-ad-here": "आपका विज्ञापन यहाँ",
+      "contact-us": "हमसे संपर्क करें"
+    }
+  }

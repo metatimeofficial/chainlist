@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "connect-wallet": "Cüzdanı Bağla",
+    "view-source-code": "Kodu Görüntüle",
+    "join-our-discord": "Discord'a Katılın",
+    "currency": "Para Birimi",
+    "search-networks": "Ağları Ara",
+    "description": "ChainList EVM ağlarının bir listesidir. Kullanıcılar, doğru zincire bağlanmak için cüzdanlarını ve Web3 ara katman yazılımı sağlayıcılarını uygun Chain ID ve Network ID'ye bağlamak için bu bilgileri kullanabilir.",
+    "help-info": "Kullanıcıların EVM destekli ağlara bağlanmasına yardımcı olmak",
+    "add-your-network": "Ağınızı Ekleyin",
+    "add-your-rpc": "RPC'nizi Ekleyin",
+    "language": "Türkçe",
+    "add-to-metamask": "Metamask'a Ekle",
+    "add-to-imToken": "imToken'a ekle",
+    "add-to-wallet": "Cüzdana Ekle",
+    "add-to-brave": "Brave'e ekle",
+    "add-to-coinbase": "Coinbase Wallet'a Ekle",
+    "add-to-trust": "Trust Wallet'a Ekle",
+    "add-to-taho": "Taho'ya ekle",
+    "add-to-xdefi": "XDEFI'ya ekle",
+    "no-privacy-info": "Gizlilik bilgisi yok",
+    "toggle-theme": "Temayı Değiştir",
+    "your-ad-here": "Reklamınız burada görünür",
+    "contact-us": "Bize ulaşın"
+  }
+}

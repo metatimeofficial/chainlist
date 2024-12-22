@@ -1,4 +1,3 @@
-import { getAddress } from "ethers/lib/utils.js";
 import { useMutation, QueryClient } from "@tanstack/react-query";
 
 export async function connectWallet() {
@@ -9,7 +8,7 @@ export async function connectWallet() {
       });
 
       return {
-        address: accounts && accounts.length > 0 ? getAddress(accounts[0]) : null,
+        address: accounts && accounts.length > 0 ? (accounts[0]) : null,
       };
     } else {
       throw new Error("No Ethereum Wallet");

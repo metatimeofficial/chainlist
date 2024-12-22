@@ -44,7 +44,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
   if (buttonOnly) {
     return (
       <button
-        className="border border-[#EAEAEA] px-4 py-2 rounded-[50px] text-[#2F80ED] hover:text-white hover:bg-[#2F80ED] w-fit mx-auto"
+        className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-white dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] w-fit mx-auto"
         onClick={() => addToNetwork({ address, chain })}
       >
         {t(renderProviderText(address))}
@@ -54,7 +54,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
 
   return (
     <>
-      <div className="shadow bg-white p-8 pb-0 rounded-[10px] flex flex-col gap-3 overflow-hidden" key={chain.chainId}>
+      <div className="shadow dark:bg-[#0D0D0D] bg-white p-8 pb-0 rounded-[10px] flex flex-col gap-3 overflow-hidden">
         <Link href={`/chain/${chain.chainId}`} prefetch={false} className="flex items-center mx-auto gap-2">
           <img
             src={icon}
@@ -63,7 +63,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
             className="rounded-full flex-shrink-0 flex relative"
             alt={chain.name + " logo"}
           />
-          <span className="text-xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis relative top-[1px]">
+          <span className="text-xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis relative top-[1px] dark:text-[#B3B3B3]">
             {chain.name}
           </span>
         </Link>
@@ -71,14 +71,16 @@ export default function Chain({ chain, buttonOnly, lang }) {
         <table>
           <thead>
             <tr>
-              <th className="font-normal text-gray-500">ChainID</th>
-              <th className="font-normal text-gray-500">{t("currency")}</th>
+              <th className="font-normal text-gray-500 dark:text-[#B3B3B3]">ChainID</th>
+              <th className="font-normal text-gray-500 dark:text-[#B3B3B3]">{t("currency")}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="text-center font-bold px-4">{chain.chainId}</td>
-              <td className="text-center font-bold px-4">
+              <td className="text-center font-bold px-4 dark:text-[#B3B3B3]">{`${chain.chainId} (0x${Number(
+                chain.chainId,
+              ).toString(16)})`}</td>
+              <td className="text-center font-bold px-4 dark:text-[#B3B3B3]">
                 {chain.nativeCurrency ? chain.nativeCurrency.symbol : "none"}
               </td>
             </tr>
@@ -86,7 +88,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
         </table>
 
         <button
-          className="border border-[#EAEAEA] px-4 py-2 rounded-[50px] mb-auto text-[#2F80ED] hover:text-white hover:bg-[#2F80ED] w-fit mx-auto"
+          className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] mb-auto dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-white dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] w-fit mx-auto"
           onClick={() => addToNetwork({ address, chain })}
         >
           {t(renderProviderText(address))}
@@ -94,7 +96,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
 
         {(lang === "en" ? router.pathname === "/" : router.pathname === "/zh") && (
           <button
-            className="w-full rounded-[50px] p-2 flex items-center mb-2 justify-center hover:bg-[#f6f6f6]"
+            className="w-full rounded-[50px] p-2 flex items-center mb-2 justify-center dark:hover:bg-[#0D0D0D] hover:bg-[#f6f6f6]"
             onClick={handleClick}
           >
             <span className="sr-only">Show RPC List of {chain.name}</span>

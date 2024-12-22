@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "connect-wallet": "Sambungkan Dompet",
+    "view-source-code": "Lihat Kode Sumber",
+    "join-our-discord": "Gabung Discord",
+    "currency": "Mata Uang",
+    "search-networks": "Cari Jaringan",
+    "description": "Chainlist adalah sebuah daftar jaringan EVM. Pengguna bisa menggunakan informasi untuk menghubungkan dompet mereka dan penyedia Web3 middleware ke Chain ID dan Network ID yang sesuai untuk terhubung ke jaringan yang benar.",
+    "help-info": "Membantu pengguna terhubung ke jaringan yang didukung EVM",
+    "add-your-network": "Tambahkan jaringan anda",
+    "add-your-rpc": "Tambahkan RPC anda",
+    "language": "English",
+    "add-to-metamask": "Tambahkan ke Metamask",
+    "add-to-imToken": "Tambahkan ke imToken",
+    "add-to-wallet": "Tambahkan ke Dompet",
+    "add-to-brave": "Tambahkan ke Brave",
+    "add-to-coinbase": "Tambahkan ke Coinbase Wallet",
+    "add-to-trust": "Tambahkan ke Trust Wallet",
+    "add-to-taho": "Tambahkan ke Taho",
+    "add-to-xdefi": "Tambahkan ke XDEFI",
+    "no-privacy-info": "Tidak ada informasi privasi",
+    "toggle-theme": "Beralih Tema",
+    "your-ad-here": "Iklan anda disini",
+    "contact-us": "Hubungi kami"
+  }
+}

@@ -1,6 +1,6 @@
-const chainIds = require("./constants/chainIds.json");
-const fetch = require("node-fetch");
-const fs = require("fs");
+import chainIds from "./constants/chainIds.js";
+import fs from "fs";
+import { generateChainData } from "./utils/fetch.js";
 
 function generateSiteMap(chains) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -36,6 +36,15 @@ function generateSiteMap(chains) {
      `;
        })
        .join("")}
+       ${Object.values(chainIds)
+         .map((name) => {
+           return `
+       <url>
+           <loc>${`https://chainlist.org/add-network/${name}`}</loc>
+       </url>
+     `;
+         })
+         .join("")}
      ${Object.values(chainIds)
        .map((name) => {
          return `
@@ -59,8 +68,7 @@ function generateSiteMap(chains) {
 }
 
 async function writeSiteMap() {
-  const res = await fetch("https://chainid.network/chains.json");
-  const chains = await res.json();
+  const chains = await generateChainData();
 
   // We generate the XML sitemap with the chains data
   const sitemap = generateSiteMap(chains);
